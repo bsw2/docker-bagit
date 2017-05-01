@@ -11,3 +11,4 @@ docker build -t bsw2/bagit:verify -f verify.Dockerfile .
 docker run --rm -v /tmp/myfiles:/bag  bsw2/bagit:baginplace
 docker run --rm -v /tmp/myfiles:/bag  bsw2/bagit:verify
 docker run --rm -v /tmp/myfiles:/bag -it  bsw2/bagit
+docker run --rm -v /tmp/20160730-nightrun:/bag:ro    bsw2/bagit verifyvalid .
