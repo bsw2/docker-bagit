@@ -8,6 +8,6 @@ docker build -t bagit:verify -f verify.Dockerfile .
 
 
 # running
-docker run --rm -v /tmp/20160730-nightrun:/bag  bagit:baginplace
-docker run --rm -v /tmp/20160730-nightrun:/bag  bagit:verify
-docker run --rm -v /tmp/20160730-nightrun:/bag -it  bagit
+docker run --rm -v /tmp/myfiles:/bag  bagit:baginplace
+docker run --rm -v /tmp/myfiles:/bag  bagit:verify
+docker run --rm -v /tmp/myfiles:/bag -it  bagit
